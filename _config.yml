@@ -15,5 +15,6 @@ github_banner:
   enable: true
   permalink: https://github.com/Shh6266/Shh6266.github.io
   title: shh6266 GitHub
+
 # Directory 目录设置
-source_dir: source #资源文件夹，默认是source
+source_dir: lib #资源文件夹，默认是source
