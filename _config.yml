@@ -4,7 +4,7 @@ theme: jekyll-theme-cayman
 title: NDNU健康日报自动填写
 subtitle: ''
 description: 谨纪念shh首次开源
-keywords: ""
+show_downloads: true
 author: Sunhh
 language: zh-CN
 timezone: ''
@@ -14,7 +14,5 @@ timezone: ''
 github_banner:
   enable: true
   permalink: https://github.com/Shh6266/Shh6266.github.io
-  title: shh6266 GitHub
+  title: To repositories
 
-# Directory 目录设置
-source_dir: lib #资源文件夹，默认是source
