@@ -1,2 +1,2 @@
 # Shh6266.github.io
-Hello,world.
+First meeting.记录一下之前写的NDNU健康日报自动填写吧。
