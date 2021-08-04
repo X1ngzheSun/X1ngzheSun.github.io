@@ -1,4 +1,3 @@
-# version3 增加实例间时间间隔
 import requests
 import json
 import time
@@ -18,30 +17,35 @@ class Student:
             "Content-Type": "application/json",
             "wechat": self.wechat
         }
-        self.data = self.getdata()
+        self.data = ''
     
-    def getdata(self):
+    def post(self):
         res = requests.get(url=getDataUrl, headers=self.headers)
         data = json.loads(res.text)['data']
         payload = data['last_data']
         payload['version'] = data['version']
-        print(self.name, "getdata状态码：", res.status_code,
-              "\n截取last_data后加上version:", payload, "\n")
-        return payload
+        self.data = payload
+        #       print(self.name, "getdata状态码：", res.status_code,
+        #             "\n截取last_data后加上version:", payload, "\n")
     
-    def post(self):
         r = requests.post(url=reportUrl, json=self.data, headers=self.headers)
+    
         print("----------------------------------------------------",
               "\nPOST返回：", r.status_code, r.text,
               "\n", self.name + "{}".format("POST成功" if r.status_code == 200 else "！！！提交失败！！！"),
               "\n--------------------------------------------------")
 
-Stu0 = Student("name", "uesr_URL")
+
+if __name__ == '__main__':
+    Stu0 = Student("shh", "http://2019-ncov.ndnulife.com/#/home?session=xxxxxxxx")
+    
 
 studentList = [Stu0]
-try:
-    for i in studentList:
-        i.post()
-    time.sleep(1)
-except:
-    print("!Error！")
+
+for student in studentList:
+    try:
+        student.post()
+        time.sleep(0.5)
+
+    except:
+        print("error!")
