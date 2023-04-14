@@ -3,9 +3,9 @@ theme: jekyll-theme-cayman
 # Site
 title: NDNU健康日报自动填写
 subtitle: ''
-description: 谨纪念shh首次开源
+description: 以此纪念初入Github
 show_downloads: true
-author: Sunhh
+author: XingzheSun
 language: zh-CN
 timezone: ''
 
