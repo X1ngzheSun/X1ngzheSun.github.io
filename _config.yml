@@ -1,4 +1,5 @@
-theme: jekyll-theme-cayman
+# theme: jekyll-theme-cayman
+remote_theme: al-folio
 
 # Site
 title: NDNU健康日报自动填写
