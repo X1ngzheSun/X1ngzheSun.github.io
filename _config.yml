@@ -1,5 +1,5 @@
-theme: jekyll-theme-Hacker
-# remote_theme: al-folio
+# theme: jekyll-theme-Hacker
+ remote_theme: beautiful-jekyll 
 
 # Site
 title: NDNU健康日报自动填写
