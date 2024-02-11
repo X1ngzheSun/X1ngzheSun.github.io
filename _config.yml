@@ -6,7 +6,10 @@ title: NDNU健康日报自动填写
 subtitle: ''
 description: 以此纪念初入Github
 show_downloads: true
-author: X1ngzheSun
+author:
+  email: Sun626647051#gmail.com
+  github: X1ngzheSun
+
 language: zh-CN
 timezone: ''
 
